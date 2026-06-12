@@ -1,5 +1,6 @@
 package homework.h01;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Game {
@@ -76,6 +77,7 @@ public class Game {
                 case 4 -> {
                     if(ultimateskill > 0){
                         int chance = (int)(Math.random() * 2);
+//                        boolean chance = new Random().nextBoolean();
                         enemyDamage = enemyHp * chance;
                         bossEnemyDamage = bossEnemyHp * chance; //보스 체력이 enemyHP에서 파생됨
                         enemyHp -= enemyDamage;

@@ -1,0 +1,3 @@
+SELECT * FROM POST;
+
+select  * FROM MEMBER;

@@ -14,7 +14,7 @@ CREATE TABLE member (
     email VARCHAR(100) NOT NULL UNIQUE,
     password VARCHAR(255) NOT NULL,
     name VARCHAR(50) NOT NULL,
-    phone char(12),
+    phone char(11),
     recommender_id INT,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );

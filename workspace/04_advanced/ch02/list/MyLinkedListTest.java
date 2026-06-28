@@ -8,7 +8,7 @@ public class MyLinkedListTest {
         MyLinkedList arr = new MyLinkedList();
         // MyLinkedList 데이터 0 ~ 데이터 4까지의 문자열을 담는다.
         for (int i = 0; i < 5; i++) {
-            arr.appendTo("데이터" + i);
+            arr.add("데이터" + i);
         }
 
         // MyLinkedList 담긴 모든 요소를 출력한다.
@@ -20,11 +20,11 @@ public class MyLinkedListTest {
         // MyLinkedList 담긴 모든 요소를 출력한다.
         System.out.println(arr);
         // index2에 데이터 5를 삽입한다.
-        arr.appendTo(2, "데이터-5");
+        arr.add(2, "데이터-5");
         //  MyLinkedList 담긴 모든요소를 출력
         System.out.println(arr);
         // 마지막 위치에 데이터-6을 추가한다.
-        arr.appendTo("데이터-6");
+        arr.add("데이터-6");
         System.out.println(arr);
         //MyLinkedList 담긴 요소의 갓수를 출력한다. 6
         System.out.println(arr.size());

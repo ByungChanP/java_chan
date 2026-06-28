@@ -1,9 +1,8 @@
 package ch02;
 
-import java.sql.Connection;
 import java.util.*;
 
-public class ArrayListTest {
+public class CollectionTest {
     void main(String[] args){
 //        String[] fruits = new String[5]{"바나나", "사과", "오렌지", "파인애플", "수박"};
 //        fruits[0] = "바나나";

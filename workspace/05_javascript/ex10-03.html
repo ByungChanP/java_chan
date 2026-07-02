@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /*
+    객체 리터럴로 객체 생성
+    */
+
+    // 객체 리터럴로 haru 객체 생성과 함께 속성 추가
+    var haru = {
+      name: "나무",
+      age: 6,
+      hobby: "잠자기",
+    };
+    console.log(haru.name, haru.age, haru.hobby);
+    console.log(haru);
+    // 객체 리터럴로 namu 객체 생성과 함께 속성 추가
+    var namu = {
+      name: "나무",
+      age: 9,
+      hobby: "먹기",
+
+    };
+    console.log(namu.name, namu.age, namu.hobby);
+    console.log(namu);
+    // 객체에 새로운 속성 추가(breed)
+    haru.country = '이탈리아';
+    namu.country = '카바리에 왕국'
+    console.log(haru);
+    console.log(namu);
+    // 객체를 JSON 형태의 문자열로 변환    
+    const haruStr = JSON.stringify(haru);
+    const namuStr = JSON.stringify(namu);
+    console.log(haruStr.name);
+    console.log(typeof haruStr, haruStr);
+    console.log(typeof namuStr, namuStr);
+
+    // JSON 형태의 문자열을 객체로 변환
+    const haruObj = JSON.parse(haruStr);
+    const namuObj = JSON.parse(namuStr);
+    console.log(typeof haruObj, haruObj);
+    console.log(typeof namuObj, namuObj);
+
+  </script>
+</head>
+<body>
+  <h1>10-03 리터럴 방식으로 객체 생성</h1>
+</body>
+</html>

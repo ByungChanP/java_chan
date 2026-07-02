@@ -1,0 +1,13 @@
+const loginForm =document.querySelector('.login-form');
+loginForm.addEventListener('submit', function(event){
+  console.log('로그인 요청');
+  event.preventDefault();
+
+  // 브라우저의 유효성 검증 결과를 확인한다. (required, pattern 등)
+  if(!loginForm.checkVisibility()){
+    event.preventDefault();
+    return;
+  }
+
+
+});

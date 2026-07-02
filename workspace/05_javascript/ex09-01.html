@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    /*
+    반복문 - while문
+    */
+  let sum1 = 0;
+  let i = 1;
+  while (i <= 10) {
+  sum1 += i;
+  i++;
+  }
+  console.log(sum1);
+    // 1부터 10까지 출력
+    
+
+    // 1부터 10까지의 모든 수의 합계를 출력
+    let sum2 = 0;
+    i = 1; // 초기화
+    do {
+    sum2 += i;
+    i++;
+    } while (i <= 10);
+
+    console.log('합계', sum2);
+
+    /*
+    반복문 - for문
+    */
+
+    // 1부터 10까지 출력
+    
+
+    // 1부터 10까지의 모든 수의 합계를 출력(for)
+    let  sum3 = 0;
+    for (let i=1; i<=10; i++) {
+    sum3 += i;
+    } 
+
+    console.log('합계', sum3);
+
+
+  </script>
+</head>
+<body>
+  <h1>09-01 while, for</h1>
+</body>
+</html>
